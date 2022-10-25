@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 
+use function Ramsey\Uuid\v1;
+
 class UserController extends Controller
 {
     /**
@@ -56,7 +58,7 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
-        //
+        return view('users.userShow', compact('user'));
     }
 
     /**
