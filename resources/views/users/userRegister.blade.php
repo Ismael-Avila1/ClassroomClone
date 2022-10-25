@@ -9,18 +9,19 @@
 <body>
     <h1>Registro de Usuario</h1>
 
-    <form action="">
-        <label for="userName">Nombre: </label>
-        <input type="text" id="userName" name="userName" placeholder="Ingresa tu nombre">
+    <form action="/user" method="POST">
+        @csrf
+        <label for="name">Nombre: </label>
+        <input type="text" id="name" name="name" placeholder="Ingresa tu nombre">
 
-        <label for="userEmail">Correo electrónico</label>
-        <input type="mail" id="userEmail" name="userEmail" placeholder="Ingresa tu correo electrónico">
+        <label for="email">Correo electrónico</label>
+        <input type="mail" id="email" name="email" placeholder="Ingresa tu correo electrónico">
 
-        <label for="userPassword">Contraseña: </label>
-        <input type="password" id="userPassword" name="userPassword" placeholder="Ingresa tu contraseña">
+        <label for="password">Contraseña: </label>
+        <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña">
 
-        <label for="userPasswordConfirm">Confirmar Contraseña: </label>
-        <input type="password" id="userPasswordConfirm" name="userPasswordConfirm" placeholder="Confirma tu contraseña">
+        <label for="comfirmedPassword">Confirmar Contraseña: </label>
+        <input type="password" id="comfirmedPassword" name="comfirmedPassword" placeholder="Confirma tu contraseña">
 
         <input type="submit" value="Registrar">
     </form>
