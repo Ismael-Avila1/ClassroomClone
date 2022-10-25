@@ -9,10 +9,19 @@
 <body>
     <h1>Listado de Usuario</h1>
 
-    <ul>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Correo</th>
+        </tr>
         @foreach($users as $user)
-            <li>{{ $user->name }}</li>
+            <tr>
+                <td>{{ $user->id }}</td>
+                <td>{{ $user->name }}</td>
+                <td>{{ $user->email }}</td>
+            </tr>
         @endforeach
-    </ul>
+    </table>
 </body>
 </html>
