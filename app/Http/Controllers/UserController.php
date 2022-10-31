@@ -45,6 +45,8 @@ class UserController extends Controller
             'comfirmedPassword' => 'required|min:8'
         ]);
 
+        // validar la contraseña ingresada con la confirmación
+
         User::create($request->all());
 
         return redirect('user');
@@ -69,7 +71,7 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
-        //
+        return view('users.userEdit', compact('user'));
     }
 
     /**
@@ -81,7 +83,24 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        //
+        $request->validate([
+            'name' => 'required|max:255',
+            'email' => 'required|email',
+            // 'password' => 'required|min:8',
+            // 'comfirmedPassword' => 'required|min:8'
+        ]);
+
+        // validar la contraseña ingresada con la confirmación
+            // validar también los campos que queden en null para no guardarlos en la DB
+
+        $user->name = $request->name;
+        $user->email = $request->email;
+        // $user->password = $request->password;
+        $user->save();
+
+        User::where('id', $user->id)->update($request->except('_token', '_method', 'password'));
+
+        return redirect('user');
     }
 
     /**

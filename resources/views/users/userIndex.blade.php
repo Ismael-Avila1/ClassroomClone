@@ -14,6 +14,8 @@
             <th>ID</th>
             <th>Nombre</th>
             <th>Correo</th>
+            <th>Editar</th>
+            <th>Eliminar</th>
         </tr>
         @foreach($users as $user)
             <tr>
@@ -24,6 +26,7 @@
                     </a>
                 </td>
                 <td>{{ $user->email }}</td>
+                <td><a href="/user/{{ $user->id }}/edit">Editar</a></td>
             </tr>
         @endforeach
     </table>
