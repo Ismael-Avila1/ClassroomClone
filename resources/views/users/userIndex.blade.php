@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Listado de Usuarios</title>
 
-    @vite(['resources/css/materialize.css', 'resources/js/materialize.js'])
+    {{-- @vite(['resources/css/materialize.css', 'resources/js/materialize.js']) --}}
 </head>
 <body>
     <h1>Listado de Usuario</h1>
