@@ -27,6 +27,13 @@
                 </td>
                 <td>{{ $user->email }}</td>
                 <td><a href="/user/{{ $user->id }}/edit">Editar</a></td>
+                <td>
+                    <form action="/user/{{ $user->id }}" method="POST">
+                        @csrf
+                        @method('delete')
+                        <input type="submit" value="Eliminar">
+                    </form>
+                </td>
             </tr>
         @endforeach
     </table>
