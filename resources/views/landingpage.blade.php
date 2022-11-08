@@ -160,15 +160,11 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 			<div class="col-md-12 col-sm-12">
 
                 <ul class="social-icon">
-                    <li><a href="#" class="fa fa-facebook wow fadeInUp" data-wow-delay="0.2s"></a></li>
-                    <li><a href="#" class="fa fa-twitter wow fadeInUp" data-wow-delay="0.4s"></a></li>
-                    <li><a href="#" class="fa fa-linkedin wow fadeInUp" data-wow-delay="0.6s"></a></li>
-                    <li><a href="#" class="fa fa-instagram wow fadeInUp" data-wow-delay="0.8s"></a></li>
-                    <li><a href="#" class="fa fa-google-plus wow fadeInUp" data-wow-delay="1.0s"></a></li>
+                    <li><a href="https://www.linkedin.com/in/ismael-avila1/" class="fa fa-linkedin wow fadeInUp" data-wow-delay="0.6s"></a></li>
+                    <li><a href="https://github.com/Ismael-Avila1" class="fa fa-github wow fadeInUp" data-wow-delay="0.8s"></a></li>
                 </ul>
 
-				<p class="wow fadeInUp"  data-wow-delay="1s" >Copyright &copy; 2016 Snapshot Studio |
-                Design: <a href="https://plus.google.com/+templatemo" title="free css templates" target="_blank">Templatemo</a></p>
+				<p class="wow fadeInUp"  data-wow-delay="1s" >&copy; <script>document.write(new Date().getFullYear())</script> | Created By Ismael Avila </p>
 
 			</div>
 
