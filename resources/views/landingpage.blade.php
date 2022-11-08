@@ -19,15 +19,16 @@ https://vegas.jaysalvat.com/
 Caption Hover Effects
 http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/animate.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="landingAssets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="landingAssets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="landingAssets/css/animate.min.css">
+	<link rel="stylesheet" href="landingAssets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="landingAssets/css/component.css">
 
-    <link rel="stylesheet" href="css/owl.theme.css">
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/vegas.min.css">
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="landingAssets/css/owl.theme.css">
+	<link rel="stylesheet" href="landingAssets/css/owl.carousel.css">
+	<link rel="stylesheet" href="landingAssets/css/vegas.min.css">
+	<link rel="stylesheet" href="landingAssets/css/style.css">
 
 	<!-- Google web font  -->
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
@@ -97,7 +98,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                 </div>
 
                 <div class="col-md-3 col-sm-4 wow fadeInUp about-img" data-wow-delay="0.6s">
-                    <img src="images/about-img.jpg" class="img-responsive img-circle" alt="About">
+                    <img src="landingAssets/images/about-img.jpg" class="img-responsive img-circle" alt="About">
                 </div>
 
                 <div class="clearfix"></div>
@@ -115,7 +116,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                     <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="team-thumb">
                             <div class="image-holder">
-                                <img src="images/team-img1.jpg" class="img-responsive img-circle" alt="Mary">
+                                <img src="landingAssets/images/team-img1.jpg" class="img-responsive img-circle" alt="Mary">
                             </div>
                             <h2 class="heading">Mary, CEO</h2>
                             <p class="description">Aliquam ac justo est. Praesent feugiat cursus est.</p>
@@ -125,7 +126,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                     <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="team-thumb">
                             <div class="image-holder">
-                                <img src="images/team-img2.jpg" class="img-responsive img-circle" alt="Jack">
+                                <img src="landingAssets/images/team-img2.jpg" class="img-responsive img-circle" alt="Jack">
                             </div>
                             <h2 class="heading">Jack, Founder</h2>
                             <p class="description">Maecenas sed diam eget risus varius blandit sit non.</p>
@@ -135,7 +136,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                     <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
                         <div class="team-thumb">
                             <div class="image-holder">
-                                <img src="images/team-img3.jpg" class="img-responsive img-circle" alt="Linda">
+                                <img src="landingAssets/images/team-img3.jpg" class="img-responsive img-circle" alt="Linda">
                             </div>
                             <h2 class="heading">Linda, Manager</h2>
                             <p class="description">Phasellus nec ante in nunc molestie tincidunt ut eu diam.</p>
@@ -145,7 +146,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                     <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
                         <div class="team-thumb">
                             <div class="image-holder">
-                                <img src="images/team-img4.jpg" class="img-responsive img-circle" alt="Sandy">
+                                <img src="landingAssets/images/team-img4.jpg" class="img-responsive img-circle" alt="Sandy">
                             </div>
                             <h2 class="heading">Sandy, Director</h2>
                             <p class="description">Curabitur vulputate euismod neque et tincidunt.</p>
@@ -155,7 +156,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                     <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
                         <div class="team-thumb">
                             <div class="image-holder">
-                                <img src="images/team-img5.jpg" class="img-responsive img-circle" alt="Lukia">
+                                <img src="landingAssets/images/team-img5.jpg" class="img-responsive img-circle" alt="Lukia">
                             </div>
                             <h2 class="heading">Lukia, Fashion</h2>
                             <p class="description">Maecenas sed diam eget risus varius blandit sit.</p>
@@ -165,7 +166,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                     <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
                         <div class="team-thumb">
                             <div class="image-holder">
-                                <img src="images/team-img6.jpg" class="img-responsive img-circle" alt="George">
+                                <img src="landingAssets/images/team-img6.jpg" class="img-responsive img-circle" alt="George">
                             </div>
                             <h2 class="heading">George, Admin</h2>
                             <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
@@ -175,7 +176,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                     <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
                         <div class="team-thumb">
                             <div class="image-holder">
-                                <img src="images/team-img7.jpg" class="img-responsive img-circle" alt="Day">
+                                <img src="landingAssets/images/team-img7.jpg" class="img-responsive img-circle" alt="Day">
                             </div>
                             <h2 class="heading">Day, Accountant</h2>
                             <p class="description">Maecenas sed diam eget risus varius blandit sit.</p>
@@ -185,7 +186,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                     <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
                         <div class="team-thumb">
                             <div class="image-holder">
-                                <img src="images/team-img8.jpg" class="img-responsive img-circle" alt="Lynn">
+                                <img src="landingAssets/images/team-img8.jpg" class="img-responsive img-circle" alt="Lynn">
                             </div>
                             <h2 class="heading">Lynn, Marketing</h2>
                             <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
@@ -215,7 +216,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                 <ul class="grid cs-style-4">
                     <li class="col-md-6 col-sm-6">
                         <figure>
-                            <div><img src="images/gallery-img1.jpg" alt="image 1"></div>
+                            <div><img src="landingAssets/images/gallery-img1.jpg" alt="image 1"></div>
                             <figcaption>
                                 <h1>Sapien arcu</h1>
                                 <small>Cum sociis natoque penatibus et magnis dis parturient montes.</small>
@@ -226,7 +227,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 
                     <li class="col-md-6 col-sm-6">
                         <figure>
-                            <div><img src="images/gallery-img2.jpg" alt="image 2"></div>
+                            <div><img src="landingAssets/images/gallery-img2.jpg" alt="image 2"></div>
                             <figcaption>
                                 <h1>Aliquam erat</h1>
                                 <small>Suspendisse venenatis quam sed libero euismod feugiat.</small>
@@ -237,7 +238,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 
                     <li class="col-md-6 col-sm-6">
                         <figure>
-                            <div><img src="images/gallery-img3.jpg" alt="image 3"></div>
+                            <div><img src="landingAssets/images/gallery-img3.jpg" alt="image 3"></div>
                             <figcaption>
                                 <h1>Cras ante sem</h1>
                                 <small>Aenean urna massa, convallis vehicula velit et, dictum pellentesque nisi.</small>
@@ -248,7 +249,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 
                     <li class="col-md-6 col-sm-6">
                         <figure>
-                            <div><img src="images/gallery-img4.jpg" alt="image 4"></div>
+                            <div><img src="landingAssets/images/gallery-img4.jpg" alt="image 4"></div>
                             <figcaption>
                                 <h1>Sed ornare</h1>
                                 <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
@@ -328,15 +329,15 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
 
 <!-- Javascript  -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/vegas.min.js"></script>
-<script src="js/modernizr.custom.js"></script>
-<script src="js/toucheffects.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/custom.js"></script>
+<script src="landingAssets/js/jquery.js"></script>
+<script src="landingAssets/js/bootstrap.min.js"></script>
+<script src="landingAssets/js/vegas.min.js"></script>
+<script src="landingAssets/js/modernizr.custom.js"></script>
+<script src="landingAssets/js/toucheffects.js"></script>
+<script src="landingAssets/js/owl.carousel.min.js"></script>
+<script src="landingAssets/js/smoothscroll.js"></script>
+<script src="landingAssets/js/wow.min.js"></script>
+<script src="landingAssets/js/custom.js"></script>
 
 </body>
 </html>
