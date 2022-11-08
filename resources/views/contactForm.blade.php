@@ -53,14 +53,13 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
             <span class="icon icon-bar"></span>
             <span class="icon icon-bar"></span>
             </button>
-            <a href="#top" class="navbar-brand smoothScroll">Snapshot</a>
+            <a href="#top" class="navbar-brand smoothScroll">ClassRoomClone</a>
         </div>
             <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#top" class="smoothScroll"><span>Home</span></a></li>
-                <li><a href="#about" class="smoothScroll"><span>About</span></a></li>
-                <li><a href="#gallery" class="smoothScroll"><span>Gallery</span></a></li>
-                <li><a href="#contact" class="smoothScroll"><span>Contact</span></a></li>
+                <li><a href="#top" class="smoothScroll"><span>Inicio</span></a></li>
+                <li><a href="#about" class="smoothScroll"><span>Acerca de</span></a></li>
+                <li><a href="contactForm" class="smoothScroll"><span>Contacto</span></a></li>
             </ul>
         </div>
 
@@ -76,22 +75,22 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                 <div class="col-md-offset-1 col-md-10 col-sm-12">
 
                     <div class="col-lg-offset-1 col-lg-10 section-title wow fadeInUp" data-wow-delay="0.4s">
-                        <h1>Send a message</h1>
-                        <p>Nunc suscipit ante in lectus laoreet, nec pharetra diam dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <h1>¿Cómo podemos ayudarte?</h1>
+                        <p>Si tienes algunna duda, comentario o sugerencia, puedes contactarnos y nos comunicaremos contigo lo antes posible.</p>
                     </div>
 
                     <form action="#" method="post" class="wow fadeInUp" data-wow-delay="0.8s">
                         <div class="col-md-6 col-sm-6">
-                            <input name="name" type="text" class="form-control" id="name" placeholder="Name">
+                            <input name="name" type="text" class="form-control" id="name" placeholder="Nombre">
                         </div>
                         <div class="col-md-6 col-sm-6">
-                            <input name="email" type="email" class="form-control" id="email" placeholder="Email">
+                            <input name="email" type="email" class="form-control" id="email" placeholder="Correo">
                         </div>
                         <div class="col-md-12 col-sm-12">
-                            <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
+                            <textarea name="message" rows="6" class="form-control" id="message" placeholder="Mensaje"></textarea>
                         </div>
                         <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
-                            <input type="submit" class="form-control" value="SEND MESSAGE">
+                            <input type="submit" class="form-control" value="Enviar Mensaje">
                         </div>
                     </form>
 
@@ -112,15 +111,11 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 			<div class="col-md-12 col-sm-12">
 
                 <ul class="social-icon">
-                    <li><a href="#" class="fa fa-facebook wow fadeInUp" data-wow-delay="0.2s"></a></li>
-                    <li><a href="#" class="fa fa-twitter wow fadeInUp" data-wow-delay="0.4s"></a></li>
-                    <li><a href="#" class="fa fa-linkedin wow fadeInUp" data-wow-delay="0.6s"></a></li>
-                    <li><a href="#" class="fa fa-instagram wow fadeInUp" data-wow-delay="0.8s"></a></li>
-                    <li><a href="#" class="fa fa-google-plus wow fadeInUp" data-wow-delay="1.0s"></a></li>
+                    <li><a href="https://www.linkedin.com/in/ismael-avila1/" class="fa fa-linkedin wow fadeInUp" data-wow-delay="0.6s"></a></li>
+                    <li><a href="https://github.com/Ismael-Avila1" class="fa fa-github wow fadeInUp" data-wow-delay="0.8s"></a></li>
                 </ul>
 
-				<p class="wow fadeInUp"  data-wow-delay="1s" >Copyright &copy; 2016 Snapshot Studio |
-                Design: <a href="https://plus.google.com/+templatemo" title="free css templates" target="_blank">Templatemo</a></p>
+				<p class="wow fadeInUp"  data-wow-delay="1s" >&copy; <script>document.write(new Date().getFullYear())</script> | Created By Ismael Avila </p>
 
 			</div>
 
