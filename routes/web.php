@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('landingpage');
 });
 
+Route::get('contactForm', function () {
+    return view('contactForm');
+});
+
 Route::resource('user', UserController::class);
 
 Route::middleware([

@@ -60,7 +60,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                 <li><a href="#top" class="smoothScroll"><span>Home</span></a></li>
                 <li><a href="#about" class="smoothScroll"><span>About</span></a></li>
                 <li><a href="#gallery" class="smoothScroll"><span>Gallery</span></a></li>
-                <li><a href="#contact" class="smoothScroll"><span>Contact</span></a></li>
+                <li><a href="contactForm" class="smoothScroll"><span>Contact</span></a></li>
             </ul>
         </div>
 
@@ -258,40 +258,6 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                         </figure>
                     </li>
                 </ul>
-
-            </div>
-        </div>
-    </section>
-
-
-<!-- Contact section -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-offset-1 col-md-10 col-sm-12">
-
-                    <div class="col-lg-offset-1 col-lg-10 section-title wow fadeInUp" data-wow-delay="0.4s">
-                        <h1>Send a message</h1>
-                        <p>Nunc suscipit ante in lectus laoreet, nec pharetra diam dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                    </div>
-
-                    <form action="#" method="post" class="wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="col-md-6 col-sm-6">
-                            <input name="name" type="text" class="form-control" id="name" placeholder="Name">
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <input name="email" type="email" class="form-control" id="email" placeholder="Email">
-                        </div>
-                        <div class="col-md-12 col-sm-12">
-                            <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
-                        </div>
-                        <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
-                            <input type="submit" class="form-control" value="SEND MESSAGE">
-                        </div>
-                    </form>
-
-                </div>
 
             </div>
         </div>
