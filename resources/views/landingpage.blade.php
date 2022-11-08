@@ -118,30 +118,27 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                     <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="team-thumb">
                             <div class="image-holder">
-                                <img src="landingAssets/images/img11.jpg" class="img-responsive img-circle" alt="Mary">
+                                <img src="landingAssets/images/img1.jpg" class="img-responsive img-circle" alt="Todo en un solo lugar">
                             </div>
                             <h2 class="heading">Todo en un solo lugar</h2>
-                            <p class="description">Reúna todas sus herramientas de aprendizaje y administre múltiples clases en un destino central.</p>
                         </div>
                     </div>
 
                     <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="team-thumb">
                             <div class="image-holder">
-                                <img src="landingAssets/images/img4.jpg" class="img-responsive img-circle" alt="Jack">
+                                <img src="landingAssets/images/img2.jpg" class="img-responsive img-circle" alt="Fácil de usar">
                             </div>
                             <h2 class="heading">Fácil de usar</h2>
-                            <p class="description">Cualquier miembro de su comunidad escolar puede comenzar a usar ClassRoomClone en minutos.</p>
                         </div>
                     </div>
 
                     <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
                         <div class="team-thumb">
                             <div class="image-holder">
-                                <img src="landingAssets/images/img10.jpg" class="img-responsive img-circle" alt="Linda">
+                                <img src="landingAssets/images/img3.jpg" class="img-responsive img-circle" alt="Accede desde cualquier lugar">
                             </div>
                             <h2 class="heading">Accede desde cualquier lugar</h2>
-                            <p class="description">Potencie la enseñanza y el aprendizaje desde cualquier lugar, en cualquier dispositivo, y brinde a su clase más flexibilidad y movilidad.</p>
                         </div>
                     </div>
 
