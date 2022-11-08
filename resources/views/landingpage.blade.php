@@ -8,7 +8,8 @@
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 
-	<title>Snapshot HTML CSS Web Template</title>
+	<title>Classroom Clone</title>
+    <link rel="icon" href="ClassRoomClone-Icon.ico" type="image/x-icon">
 <!--
 Snapshot Template
 http://www.templatemo.com/tm-493-snapshot
@@ -53,14 +54,13 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
             <span class="icon icon-bar"></span>
             <span class="icon icon-bar"></span>
             </button>
-            <a href="#top" class="navbar-brand smoothScroll">Snapshot</a>
+            <a href="#top" class="navbar-brand smoothScroll">ClassRoomClone</a>
         </div>
             <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#top" class="smoothScroll"><span>Home</span></a></li>
-                <li><a href="#about" class="smoothScroll"><span>About</span></a></li>
-                <li><a href="#gallery" class="smoothScroll"><span>Gallery</span></a></li>
-                <li><a href="contactForm" class="smoothScroll"><span>Contact</span></a></li>
+                <li><a href="#top" class="smoothScroll"><span>Inicio</span></a></li>
+                <li><a href="#about" class="smoothScroll"><span>Acerca de</span></a></li>
+                <li><a href="contactForm" class="smoothScroll"><span>Contacto</span></a></li>
             </ul>
         </div>
 
@@ -75,9 +75,8 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
             <div class="row">
 
                 <div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
-                    <h1 class="wow fadeInUp" data-wow-delay="0.6s">Let's take a snapshot</h1>
-                    <p class="wow fadeInUp" data-wow-delay="0.9s">Snapshot website template is available for free download. Anyone can modify and use it for any site. Please tell your friends about <a rel="nofollow" href="http://www.templatemo.com">templatemo</a>. Thank you.</p>
-                    <a href="#about" class="smoothScroll btn btn-success btn-lg wow fadeInUp" data-wow-delay="1.2s">Learn more</a>
+                    <h1 class="wow fadeInUp" data-wow-delay="0.6s">Donde la enseñanza y el aprendizaje se unen</h1>
+                    <p class="wow fadeInUp" data-wow-delay="0.9s">ClassRoomClone es el lugar todo en uno para enseñar y aprender. Nuestra herramienta segura y fácil de usar ayuda a los educadores a administrar, medir y enriquecer las experiencias de aprendizaje.</p>
                 </div>
 
             </div>
@@ -195,69 +194,6 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 
                 </div>
                 <!-- end team carousel -->
-
-            </div>
-        </div>
-    </section>
-
-
-<!-- Gallery section -->
-    <section id="gallery">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-offset-2 col-md-8 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="section-title">
-                        <h1>Gallery</h1>
-                        <p>Nullam scelerisque, quam nec iaculis vulputate, arcu ligula sollicitudin nisl, ac volutpat erat nulla a arcu.</p>
-                    </div>
-                </div>
-
-                <ul class="grid cs-style-4">
-                    <li class="col-md-6 col-sm-6">
-                        <figure>
-                            <div><img src="landingAssets/images/gallery-img1.jpg" alt="image 1"></div>
-                            <figcaption>
-                                <h1>Sapien arcu</h1>
-                                <small>Cum sociis natoque penatibus et magnis dis parturient montes.</small>
-                                <a href="#">Read More</a>
-                            </figcaption>
-                        </figure>
-                    </li>
-
-                    <li class="col-md-6 col-sm-6">
-                        <figure>
-                            <div><img src="landingAssets/images/gallery-img2.jpg" alt="image 2"></div>
-                            <figcaption>
-                                <h1>Aliquam erat</h1>
-                                <small>Suspendisse venenatis quam sed libero euismod feugiat.</small>
-                                <a href="#">Details</a>
-                            </figcaption>
-                        </figure>
-                    </li>
-
-                    <li class="col-md-6 col-sm-6">
-                        <figure>
-                            <div><img src="landingAssets/images/gallery-img3.jpg" alt="image 3"></div>
-                            <figcaption>
-                                <h1>Cras ante sem</h1>
-                                <small>Aenean urna massa, convallis vehicula velit et, dictum pellentesque nisi.</small>
-                                <a href="#">Learn More</a>
-                            </figcaption>
-                        </figure>
-                    </li>
-
-                    <li class="col-md-6 col-sm-6">
-                        <figure>
-                            <div><img src="landingAssets/images/gallery-img4.jpg" alt="image 4"></div>
-                            <figcaption>
-                                <h1>Sed ornare</h1>
-                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
-                                <a href="#">Full Post</a>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
 
             </div>
         </div>
