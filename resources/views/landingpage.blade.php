@@ -91,21 +91,24 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 
                 <div class="col-md-9 col-sm-8 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="about-thumb">
-                        <h1>Background</h1>
-                        <p>Quisque tempor bibendum dolor at volutpat. Suspendisse venenatis quam sed libero euismod feugiat. In cursus nisi vitae lectus facilisis mollis. Nullam scelerisque, quam nec iaculis vulputate.</p>
+                        <h1>Ahorre tiempo y simplifique las tareas diarias</h1>
+                        <ul>
+                            <li>Cambie de clase a tarea a estudiante con solo unos pocos clics</li>
+                            <li>Realice un seguimiento del progreso de los estudiantes en su libro de calificaciones</li>
+                            <li>Mantenga la calificación consistente y transparente con las rúbricas que se muestran junto con el trabajo de los estudiantes</li>
+                        </ul>
                     </div>
                 </div>
 
                 <div class="col-md-3 col-sm-4 wow fadeInUp about-img" data-wow-delay="0.6s">
-                    <img src="landingAssets/images/about-img.jpg" class="img-responsive img-circle" alt="About">
+                    <img src="ClassRoomClone-Logo.png" class="img-responsive " alt="About">
                 </div>
 
                 <div class="clearfix"></div>
 
                 <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="section-title text-center">
-                        <h1>Snapshot Team</h1>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <h1>Potencia el potencial de los estudiantes</h1>
                     </div>
                 </div>
 
@@ -115,80 +118,30 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                     <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="team-thumb">
                             <div class="image-holder">
-                                <img src="landingAssets/images/team-img1.jpg" class="img-responsive img-circle" alt="Mary">
+                                <img src="landingAssets/images/img11.jpg" class="img-responsive img-circle" alt="Mary">
                             </div>
-                            <h2 class="heading">Mary, CEO</h2>
-                            <p class="description">Aliquam ac justo est. Praesent feugiat cursus est.</p>
+                            <h2 class="heading">Todo en un solo lugar</h2>
+                            <p class="description">Reúna todas sus herramientas de aprendizaje y administre múltiples clases en un destino central.</p>
                         </div>
                     </div>
 
                     <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="team-thumb">
                             <div class="image-holder">
-                                <img src="landingAssets/images/team-img2.jpg" class="img-responsive img-circle" alt="Jack">
+                                <img src="landingAssets/images/img4.jpg" class="img-responsive img-circle" alt="Jack">
                             </div>
-                            <h2 class="heading">Jack, Founder</h2>
-                            <p class="description">Maecenas sed diam eget risus varius blandit sit non.</p>
+                            <h2 class="heading">Fácil de usar</h2>
+                            <p class="description">Cualquier miembro de su comunidad escolar puede comenzar a usar ClassRoomClone en minutos.</p>
                         </div>
                     </div>
 
                     <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
                         <div class="team-thumb">
                             <div class="image-holder">
-                                <img src="landingAssets/images/team-img3.jpg" class="img-responsive img-circle" alt="Linda">
+                                <img src="landingAssets/images/img10.jpg" class="img-responsive img-circle" alt="Linda">
                             </div>
-                            <h2 class="heading">Linda, Manager</h2>
-                            <p class="description">Phasellus nec ante in nunc molestie tincidunt ut eu diam.</p>
-                        </div>
-                    </div>
-
-                    <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="team-thumb">
-                            <div class="image-holder">
-                                <img src="landingAssets/images/team-img4.jpg" class="img-responsive img-circle" alt="Sandy">
-                            </div>
-                            <h2 class="heading">Sandy, Director</h2>
-                            <p class="description">Curabitur vulputate euismod neque et tincidunt.</p>
-                        </div>
-                    </div>
-
-                    <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="team-thumb">
-                            <div class="image-holder">
-                                <img src="landingAssets/images/team-img5.jpg" class="img-responsive img-circle" alt="Lukia">
-                            </div>
-                            <h2 class="heading">Lukia, Fashion</h2>
-                            <p class="description">Maecenas sed diam eget risus varius blandit sit.</p>
-                        </div>
-                    </div>
-
-                    <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="team-thumb">
-                            <div class="image-holder">
-                                <img src="landingAssets/images/team-img6.jpg" class="img-responsive img-circle" alt="George">
-                            </div>
-                            <h2 class="heading">George, Admin</h2>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-                        </div>
-                    </div>
-
-                    <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="team-thumb">
-                            <div class="image-holder">
-                                <img src="landingAssets/images/team-img7.jpg" class="img-responsive img-circle" alt="Day">
-                            </div>
-                            <h2 class="heading">Day, Accountant</h2>
-                            <p class="description">Maecenas sed diam eget risus varius blandit sit.</p>
-                        </div>
-                    </div>
-
-                    <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="team-thumb">
-                            <div class="image-holder">
-                                <img src="landingAssets/images/team-img8.jpg" class="img-responsive img-circle" alt="Lynn">
-                            </div>
-                            <h2 class="heading">Lynn, Marketing</h2>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            <h2 class="heading">Accede desde cualquier lugar</h2>
+                            <p class="description">Potencie la enseñanza y el aprendizaje desde cualquier lugar, en cualquier dispositivo, y brinde a su clase más flexibilidad y movilidad.</p>
                         </div>
                     </div>
 
