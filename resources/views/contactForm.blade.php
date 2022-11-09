@@ -8,7 +8,9 @@
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 
-	<title>Snapshot HTML CSS Web Template</title>
+    <title>Classroom Clone</title>
+    <link rel="icon" href="ClassRoomClone-Icon.ico" type="image/x-icon">
+
 <!--
 Snapshot Template
 http://www.templatemo.com/tm-493-snapshot
@@ -57,8 +59,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
         </div>
             <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#top" class="smoothScroll"><span>Inicio</span></a></li>
-                <li><a href="#about" class="smoothScroll"><span>Acerca de</span></a></li>
+                <li><a href="/" class="smoothScroll"><span>Inicio</span></a></li>
                 <li><a href="contactForm" class="smoothScroll"><span>Contacto</span></a></li>
             </ul>
         </div>
@@ -81,10 +82,10 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 
                     <form action="#" method="post" class="wow fadeInUp" data-wow-delay="0.8s">
                         <div class="col-md-6 col-sm-6">
-                            <input name="name" type="text" class="form-control" id="name" placeholder="Nombre">
+                            <input name="name" type="text" class="form-control" id="name" placeholder="Nombre" value="{{ $name }}">
                         </div>
                         <div class="col-md-6 col-sm-6">
-                            <input name="email" type="email" class="form-control" id="email" placeholder="Correo">
+                            <input name="email" type="email" class="form-control" id="email" placeholder="Correo" value="{{ $email }}">
                         </div>
                         <div class="col-md-12 col-sm-12">
                             <textarea name="message" rows="6" class="form-control" id="message" placeholder="Mensaje"></textarea>
