@@ -80,7 +80,8 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                         <p>Si tienes algunna duda, comentario o sugerencia, puedes contactarnos y nos comunicaremos contigo lo antes posible.</p>
                     </div>
 
-                    <form action="#" method="post" class="wow fadeInUp" data-wow-delay="0.8s">
+                    <form action="contactForm" method="POST" class="wow fadeInUp" data-wow-delay="0.8s">
+                        @csrf
                         <div class="col-md-6 col-sm-6">
                             <input name="name" type="text" class="form-control" id="name" placeholder="Nombre" value="{{ $name }}">
                         </div>

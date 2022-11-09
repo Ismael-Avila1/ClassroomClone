@@ -20,6 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('/contactForm/{codigo?}', [SitioController::class, 'contact']);
+Route::post('/contactForm', [SitioController::class, 'saveMessage']);
 
 
 Route::resource('user', UserController::class);
