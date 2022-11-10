@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SitioController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,8 +16,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landingpage');
 });
+
+Route::get('/contactForm/{codigo?}', [SitioController::class, 'contact']);
+Route::post('/contactForm', [SitioController::class, 'saveMessage']);
+
 
 Route::resource('user', UserController::class);
 
