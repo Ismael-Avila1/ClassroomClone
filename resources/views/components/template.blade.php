@@ -7,7 +7,7 @@
     <title>Sistema</title>
 </head>
 <body>
-    <h1>Uso de Layout</h1>
+    <h1>{{ $title }}</h1>
 
     {{ $slot }}
 

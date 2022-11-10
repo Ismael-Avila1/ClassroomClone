@@ -1,5 +1,4 @@
-<x-template>
-    <h1>Modificar Información de Usuario</h1>
+<x-template title="Modificar Información de Usuario">
 
     <form action="/user/{{ $user->id }}" method="POST">
         @csrf

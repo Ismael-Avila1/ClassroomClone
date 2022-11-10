@@ -1,5 +1,4 @@
-<x-template>
-    <h1>Listado de Usuario</h1>
+<x-template title="Listado de Usuarios">
 
     <table border="1">
         <tr>

@@ -1,5 +1,4 @@
-<x-template>
-    <h1>Información de Usuario</h1>
+<x-template title="Información de Usuario">
 
     <h2>{{ $user->name }}</h2>
 

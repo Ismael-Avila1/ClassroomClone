@@ -1,5 +1,4 @@
-<x-template>
-    <h1>Registro de Usuario</h1>
+<x-template title="Registro de Usuario">
 
     <form action="/user" method="POST">
         @csrf
