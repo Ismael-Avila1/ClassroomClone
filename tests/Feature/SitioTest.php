@@ -13,10 +13,16 @@ class SitioTest extends TestCase
      *
      * @return void
      */
-    public function test_example()
+    public function test_contactForm()
     {
-        $response = $this->get('/');
+        $response = $this->get('/contactForm');
 
+        $response->assertStatus(200);
+    }
+
+    public function test_contactForm_conCodigo()
+    {
+        $response = $this->get('/contactForm/1234');
         $response->assertStatus(200);
     }
 }
