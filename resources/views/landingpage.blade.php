@@ -61,6 +61,8 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                 <li><a href="#top" class="smoothScroll"><span>Inicio</span></a></li>
                 <li><a href="#about" class="smoothScroll"><span>Acerca de</span></a></li>
                 <li><a href="contactForm" class="smoothScroll"><span>Contacto</span></a></li>
+                <li><a href="login" class="smoothScroll"><span>Log in</span></a></li>
+                <li><a href="register" class="smoothScroll"><span>Registro</span></a></li>
             </ul>
         </div>
 
