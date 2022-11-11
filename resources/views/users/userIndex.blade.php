@@ -1,31 +1,46 @@
 <x-template title="Listado de Usuarios">
 
-    <table border="1">
-        <tr>
-            <th>ID</th>
-            <th>Nombre</th>
-            <th>Correo</th>
-            <th>Editar</th>
-            <th>Eliminar</th>
-        </tr>
-        @foreach($users as $user)
+    <table class="table is-hoverable is-fullwidth">
+        <thead>
             <tr>
-                <td>{{ $user->id }}</td>
-                <td>
-                    <a href="/user/{{ $user->id }}">
-                        {{ $user->name }}
-                    </a>
-                </td>
-                <td>{{ $user->email }}</td>
-                <td><a href="/user/{{ $user->id }}/edit">Editar</a></td>
-                <td>
-                    <form action="/user/{{ $user->id }}" method="POST">
-                        @csrf
-                        @method('delete')
-                        <input type="submit" value="Eliminar">
-                    </form>
-                </td>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Editar</th>
+                <th>Eliminar</th>
             </tr>
-        @endforeach
+        </thead>
+
+        <tbody>
+            @foreach($users as $user)
+                <tr>
+                    <td>{{ $user->id }}</td>
+                    <td>
+                        <a class="link is-normal is-responsive" href="/user/{{ $user->id }}">
+                            {{ $user->name }}
+                        </a>
+                    </td>
+                    <td>{{ $user->email }}</td>
+                    <td><a class="button is-info is-normal is-responsive" href="/user/{{ $user->id }}/edit">Editar</a></td>
+                    <td>
+                        <form action="/user/{{ $user->id }}" method="POST">
+                            @csrf
+                            @method('delete')
+                            <input class="button is-danger is-normal is-responsive" type="submit" value="Eliminar">
+                        </form>
+                    </td>
+                </tr>
+            @endforeach
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Editar</th>
+                <th>Eliminar</th>
+            </tr>
+        </tfoot>
     </table>
 </x-template>
