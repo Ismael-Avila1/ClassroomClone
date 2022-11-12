@@ -1,6 +1,17 @@
 <x-template title="Registro de Usuario">
 
-    <form class="container" ction="/user" method="POST">
+    <div class="container">
+        @if($errors->any())
+            @foreach($errors->all() as $error)
+                <div class="notification is-danger">
+                    {{-- <button class="delete"></button> --}}
+                    {{ $error }}
+                </div>
+            @endforeach
+        @endif
+    </div>
+
+    <form class="container" action="/user" method="POST">
         @csrf
         <div class="field">
             <label class="label" for="name">Nombre: </label>
