@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sistema</title>
 
-    <link rel="stylesheet" href="bulma.min.css">
-    <link rel="stylesheet" href="bulma-rtl.min.css">
+    <link rel="stylesheet" href="/bulma.min.css">
+    <link rel="stylesheet" href="/bulma-rtl.min.css">
 </head>
 <body>
     <h1 class="title is-1">{{ $title }}</h1>
