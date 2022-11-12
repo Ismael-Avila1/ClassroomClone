@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/bulma-rtl.min.css">
 </head>
 <body>
-    <h1 class="title is-1">{{ $title }}</h1>
+    <h1 class="title is-size-1-desktop has-text-centered">{{ $title }}</h1>
 
     {{ $slot }}
 

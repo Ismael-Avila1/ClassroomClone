@@ -1,19 +1,35 @@
 <x-template title="Registro de Usuario">
 
-    <form action="/user" method="POST">
+    <form class="container" ction="/user" method="POST">
         @csrf
-        <label class="label" for="name">Nombre: </label>
-        <input class="input" type="text" id="name" name="name" placeholder="Ingresa tu nombre">
+        <div class="field">
+            <label class="label" for="name">Nombre: </label>
+            <div class="control">
+                <input class="input" type="text" id="name" name="name" placeholder="Ingresa tu nombre">
+            </div>
+        </div>
 
-        <label class="label" for="email">Correo electrónico</label>
-        <input class="input" type="mail" id="email" name="email" placeholder="Ingresa tu correo electrónico">
+        <div class="field">
+            <label class="label" for="email">Correo electrónico</label>
+            <div class="control">
+                <input class="input" type="mail" id="email" name="email" placeholder="Ingresa tu correo electrónico">
+            </div>
+        </div>
 
-        <label class="label" for="password">Contraseña: </label>
-        <input class="input" type="password" id="password" name="password" placeholder="Ingresa tu contraseña">
+        <div class="field">
+            <label class="label" for="password">Contraseña: </label>
+            <div class="control">
+                <input class="input" type="password" id="password" name="password" placeholder="Ingresa tu contraseña">
+            </div>
+        </div>
 
-        <label class="label" for="comfirmedPassword">Confirmar Contraseña: </label>
-        <input class="input" type="password" id="comfirmedPassword" name="comfirmedPassword" placeholder="Confirma tu contraseña">
+        <div class="field">
+            <label class="label" for="comfirmedPassword">Confirmar Contraseña: </label>
+            <div class="control">
+                <input class="input" type="password" id="comfirmedPassword" name="comfirmedPassword" placeholder="Confirma tu contraseña">
+            </div>
+        </div>
 
-        <input class="button is-success is-normal is-responsive" type="submit" value="Registrar">
+        <input class="button is-primary is-normal is-responsive" type="submit" value="Registrar">
     </form>
 </x-template>
