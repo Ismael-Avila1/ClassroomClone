@@ -1,15 +1,23 @@
-<x-template>
-    <h1>Modificar Información de Usuario</h1>
+<x-template title="Modificar Información de Usuario">
 
-    <form action="/user/{{ $user->id }}" method="POST">
+    <form class="container" action="/user/{{ $user->id }}" method="POST">
         @csrf
         @method('patch')
-        <label for="name">Nombre: </label>
-        <input type="text" id="name" name="name" value="{{ $user->name }}" placeholder="Ingresa tu nombre">
+        <div class="field">
+            <label class="label" for="name">Nombre: </label>
+            <div class="control">
+                <input class="input" type="text" id="name" name="name" value="{{ $user->name }}" placeholder="Ingresa tu nombre">
+            </div>
+        </div>
 
-        <label for="email">Correo electrónico</label>
-        <input type="mail" id="email" name="email" value="{{ $user->email }}" placeholder="Ingresa tu correo electrónico">
+        <div class="field">
+            <label class="label" for="email">Correo electrónico</label>
+            <div class="control">
+                <input class="input" type="mail" id="email" name="email" value="{{ $user->email }}" placeholder="Ingresa tu correo electrónico">
+            </div>
+        </div>
 
-        <input type="submit" value="Actualizar información">
+        <input class="button is-primary is-normal is-responsive" type="submit" value="Actualizar información">
     </form>
+
 </x-template>

@@ -1,20 +1,46 @@
-<x-template>
-    <h1>Registro de Usuario</h1>
+<x-template title="Registro de Usuario">
 
-    <form action="/user" method="POST">
+    <div class="container">
+        @if($errors->any())
+            @foreach($errors->all() as $error)
+                <div class="notification is-danger">
+                    {{-- <button class="delete"></button> --}}
+                    {{ $error }}
+                </div>
+            @endforeach
+        @endif
+    </div>
+
+    <form class="container" action="/user" method="POST">
         @csrf
-        <label for="name">Nombre: </label>
-        <input type="text" id="name" name="name" placeholder="Ingresa tu nombre">
+        <div class="field">
+            <label class="label" for="name">Nombre: </label>
+            <div class="control">
+                <input class="input" type="text" id="name" name="name" placeholder="Ingresa tu nombre" value="{{ old('name') }}">
+            </div>
+        </div>
 
-        <label for="email">Correo electrónico</label>
-        <input type="mail" id="email" name="email" placeholder="Ingresa tu correo electrónico">
+        <div class="field">
+            <label class="label" for="email">Correo electrónico</label>
+            <div class="control">
+                <input class="input" type="mail" id="email" name="email" placeholder="Ingresa tu correo electrónico" value="{{ old('email') }}">
+            </div>
+        </div>
 
-        <label for="password">Contraseña: </label>
-        <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña">
+        <div class="field">
+            <label class="label" for="password">Contraseña: </label>
+            <div class="control">
+                <input class="input" type="password" id="password" name="password" placeholder="Ingresa tu contraseña">
+            </div>
+        </div>
 
-        <label for="comfirmedPassword">Confirmar Contraseña: </label>
-        <input type="password" id="comfirmedPassword" name="comfirmedPassword" placeholder="Confirma tu contraseña">
+        <div class="field">
+            <label class="label" for="comfirmedPassword">Confirmar Contraseña: </label>
+            <div class="control">
+                <input class="input" type="password" id="comfirmedPassword" name="comfirmedPassword" placeholder="Confirma tu contraseña">
+            </div>
+        </div>
 
-        <input type="submit" value="Registrar">
+        <input class="button is-primary is-normal is-responsive" type="submit" value="Registrar">
     </form>
 </x-template>

@@ -21,16 +21,16 @@ https://vegas.jaysalvat.com/
 Caption Hover Effects
 http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 -->
-    <link rel="stylesheet" href="landingAssets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="landingAssets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="landingAssets/css/animate.min.css">
-	<link rel="stylesheet" href="landingAssets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="landingAssets/css/component.css">
+    <link rel="stylesheet" href="/landingAssets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/landingAssets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/landingAssets/css/animate.min.css">
+	<link rel="stylesheet" href="/landingAssets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/landingAssets/css/component.css">
 
-    <link rel="stylesheet" href="landingAssets/css/owl.theme.css">
-	<link rel="stylesheet" href="landingAssets/css/owl.carousel.css">
-	<link rel="stylesheet" href="landingAssets/css/vegas.min.css">
-	<link rel="stylesheet" href="landingAssets/css/style.css">
+    <link rel="stylesheet" href="/landingAssets/css/owl.theme.css">
+	<link rel="stylesheet" href="/landingAssets/css/owl.carousel.css">
+	<link rel="stylesheet" href="/landingAssets/css/vegas.min.css">
+	<link rel="stylesheet" href="/landingAssets/css/style.css">
 
 	<!-- Google web font  -->
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
@@ -61,6 +61,8 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/" class="smoothScroll"><span>Inicio</span></a></li>
                 <li><a href="contactForm" class="smoothScroll"><span>Contacto</span></a></li>
+                <li><a href="login" class="smoothScroll"><span>Log in</span></a></li>
+                <li><a href="register" class="smoothScroll"><span>Registro</span></a></li>
             </ul>
         </div>
 
@@ -130,15 +132,15 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
 
 <!-- Javascript  -->
-<script src="landingAssets/js/jquery.js"></script>
-<script src="landingAssets/js/bootstrap.min.js"></script>
-<script src="landingAssets/js/vegas.min.js"></script>
-<script src="landingAssets/js/modernizr.custom.js"></script>
-<script src="landingAssets/js/toucheffects.js"></script>
-<script src="landingAssets/js/owl.carousel.min.js"></script>
-<script src="landingAssets/js/smoothscroll.js"></script>
-<script src="landingAssets/js/wow.min.js"></script>
-<script src="landingAssets/js/custom.js"></script>
+<script src="/landingAssets/js/jquery.js"></script>
+<script src="/landingAssets/js/bootstrap.min.js"></script>
+<script src="/landingAssets/js/vegas.min.js"></script>
+<script src="/landingAssets/js/modernizr.custom.js"></script>
+<script src="/landingAssets/js/toucheffects.js"></script>
+<script src="/landingAssets/js/owl.carousel.min.js"></script>
+<script src="/landingAssets/js/smoothscroll.js"></script>
+<script src="/landingAssets/js/wow.min.js"></script>
+<script src="/landingAssets/js/custom.js"></script>
 
 </body>
 </html>
