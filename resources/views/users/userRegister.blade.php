@@ -16,14 +16,14 @@
         <div class="field">
             <label class="label" for="name">Nombre: </label>
             <div class="control">
-                <input class="input" type="text" id="name" name="name" placeholder="Ingresa tu nombre">
+                <input class="input" type="text" id="name" name="name" placeholder="Ingresa tu nombre" value="{{ old('name') }}">
             </div>
         </div>
 
         <div class="field">
             <label class="label" for="email">Correo electrónico</label>
             <div class="control">
-                <input class="input" type="mail" id="email" name="email" placeholder="Ingresa tu correo electrónico">
+                <input class="input" type="mail" id="email" name="email" placeholder="Ingresa tu correo electrónico" value="{{ old('email') }}">
             </div>
         </div>
 
