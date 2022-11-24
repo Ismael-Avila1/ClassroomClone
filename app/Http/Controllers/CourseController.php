@@ -24,7 +24,7 @@ class CourseController extends Controller
      */
     public function create()
     {
-        //
+        return view('courses.courseCreate');
     }
 
     /**
@@ -35,7 +35,22 @@ class CourseController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required|min:5|max:255',
+            'section' => 'required|min:1|max:3',
+            'room' => 'required|min:1'
+        ]);
+
+        $invitationCode = substr(md5($request->name), 0, 8);
+
+        Course::create([
+            'name' => $request->name,
+            'section' => $request->section,
+            'room' => $request->room,
+            'invitation-code' =>  $invitationCode
+        ]);
+
+        //Redirigir a alguna parte (dashboard de usuarios)
     }
 
     /**
