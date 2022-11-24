@@ -24,6 +24,7 @@ Route::post('/contactForm', [SitioController::class, 'saveMessage']);
 
 
 Route::resource('user', UserController::class);
+Route::resource('course', UserController::class);
 
 Route::middleware([
     'auth:sanctum',
