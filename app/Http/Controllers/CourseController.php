@@ -41,7 +41,7 @@ class CourseController extends Controller
             'room' => 'required|min:1'
         ]);
 
-        $invitationCode = substr(md5($request->name), 0, 8);
+        $invitationCode = substr(md5($request->id), 0, 8);
 
         Course::create([
             'name' => $request->name,
