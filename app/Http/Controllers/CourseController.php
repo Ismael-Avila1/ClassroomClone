@@ -72,7 +72,7 @@ class CourseController extends Controller
      */
     public function edit(Course $course)
     {
-        //
+        return view('courses.courseEdit', compact('course'));
     }
 
     /**
@@ -84,7 +84,20 @@ class CourseController extends Controller
      */
     public function update(Request $request, Course $course)
     {
-        //
+        $request->validate([
+            'name' => 'required|min:5|max:255',
+            'section' => 'required|min:1|max:3',
+            'room' => 'required|min:1'
+        ]);
+
+        $course->name = $request->name;
+        $course->section = $request->section;
+        $course->room = $request->room;
+        $course->save();
+
+        Course::where('id', $course->id)->update($request->except('_token', '_method'));
+
+        return redirect('user');
     }
 
     /**
