@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Assignment extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'title', 'instructions', 'points', 'due'
+    ];
+
+    public $timestamps = false;
 }

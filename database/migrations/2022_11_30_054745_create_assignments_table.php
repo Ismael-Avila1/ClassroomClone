@@ -15,7 +15,10 @@ return new class extends Migration
     {
         Schema::create('assignments', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('title');
+            $table->string('instructions');
+            $table->integer('points');
+            $table->date('due');
         });
     }
 

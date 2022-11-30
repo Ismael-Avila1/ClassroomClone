@@ -24,7 +24,7 @@ class AssignmentController extends Controller
      */
     public function create()
     {
-        //
+        return view('assignment.assignmentCreate');
     }
 
     /**
@@ -35,7 +35,16 @@ class AssignmentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title' => 'required',
+            'instructions' => 'required',
+            'points' => 'required',
+            'due' => 'required'
+        ]);
+
+        Assignment::create($request->except('_token'));
+
+        //Redirigir al CouseShow
     }
 
     /**
@@ -46,7 +55,7 @@ class AssignmentController extends Controller
      */
     public function show(Assignment $assignment)
     {
-        //
+        return view('assignment.assignmentCreate', compact('assignment'));
     }
 
     /**
@@ -57,7 +66,7 @@ class AssignmentController extends Controller
      */
     public function edit(Assignment $assignment)
     {
-        //
+        return view('assignment.assignmentCreate', compact('assignment'));
     }
 
     /**
@@ -69,7 +78,22 @@ class AssignmentController extends Controller
      */
     public function update(Request $request, Assignment $assignment)
     {
-        //
+        $request->validate([
+            'title' => 'required',
+            'instructions' => 'required',
+            'points' => 'required',
+            'due' => 'required'
+        ]);
+
+        $assignment->title = $request->title;
+        $assignment->instructions = $request->instructions;
+        $assignment->points = $request->points;
+        $assignment->due = $request->due;
+        $assignment->save();
+
+        Assignment::where('id', $assignment->id)->update($request->except('_token', '_method'));
+
+        //Redirigir al CouseShow
     }
 
     /**
@@ -80,6 +104,8 @@ class AssignmentController extends Controller
      */
     public function destroy(Assignment $assignment)
     {
-        //
+        $assignment->delete();
+
+        //Redirigir al CouseShow
     }
 }
