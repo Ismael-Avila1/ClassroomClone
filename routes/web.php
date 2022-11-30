@@ -3,6 +3,7 @@
 use App\Http\Controllers\SitioController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\AssignmentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,6 +27,7 @@ Route::post('/contactForm', [SitioController::class, 'saveMessage']);
 
 Route::resource('user', UserController::class);
 Route::resource('course', CourseController::class);
+Route::resource('assignment', AssignmentController::class);
 
 Route::middleware([
     'auth:sanctum',
