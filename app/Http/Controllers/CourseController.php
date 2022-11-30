@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Course;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CourseController extends Controller
 {
@@ -42,12 +43,14 @@ class CourseController extends Controller
         ]);
 
         $invitationCode = substr(md5($request->id), 0, 8);
+        $id = Auth::id();
 
         Course::create([
             'name' => $request->name,
             'section' => $request->section,
             'room' => $request->room,
-            'invitation-code' =>  $invitationCode
+            'invitation-code' => $invitationCode,
+            'user_id' => $id
         ]);
 
         //Redirigir a alguna parte (dashboard de usuarios)

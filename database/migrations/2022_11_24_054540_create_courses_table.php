@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('section');
             $table->string('room');
             $table->string('invitation-code');
+            $table->foreignId('user_id')->constrained(); // id el profesor de la clase
         });
     }
 

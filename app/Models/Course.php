@@ -11,9 +11,13 @@ class Course extends Model
 
 
     protected $fillable = [
-        'name', 'section', 'room', 'invitation-code'
+        'name', 'section', 'room', 'invitation-code', 'user_id'
     ];
 
     public $timestamps = false;
 
+    public function professor()
+    {
+        return $this->hasOne(User::class);
+    }
 }
