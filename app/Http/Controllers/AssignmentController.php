@@ -66,7 +66,7 @@ class AssignmentController extends Controller
      */
     public function edit(Assignment $assignment)
     {
-        return view('assignment.assignmentCreate', compact('assignment'));
+        return view('assignments.assignmentEdit', compact('assignment'));
     }
 
     /**
