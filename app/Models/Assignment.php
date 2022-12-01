@@ -14,4 +14,9 @@ class Assignment extends Model
     ];
 
     public $timestamps = false;
+
+    public function course()
+    {
+        return $this->belongsTo(Course::class);
+    }
 }
