@@ -8,4 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Work extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'user_id', 'assignment_id', 'grade'
+    ];
+
+    public $timestapms = false;
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
