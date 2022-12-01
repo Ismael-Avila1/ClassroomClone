@@ -5,6 +5,7 @@ namespace App\Models;
 use App\Http\Controllers\AssignmentController;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Routing\Middleware\ThrottleRequestsWithRedis;
 
 class Work extends Model
 {
@@ -24,5 +25,10 @@ class Work extends Model
     public function assignment()
     {
         return $this->belongsTo(Assignment::class);
+    }
+
+    public function file()
+    {
+        return $this->hasOne(File::class);
     }
 }

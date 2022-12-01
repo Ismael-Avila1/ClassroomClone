@@ -15,7 +15,10 @@ return new class extends Migration
     {
         Schema::create('files', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->foreignId('work_id')->constrained();
+            $table->string('originalName');
+            $table->string('path');
+            $table->string('mime');
         });
     }
 

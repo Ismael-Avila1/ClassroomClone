@@ -8,4 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class File extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'work_id', 'originalName'
+    ];
+
+    public $timestamps = false;
+
+    public function work()
+    {
+        return $this->belongsTo(Work::class);
+    }
 }
