@@ -19,4 +19,9 @@ class Assignment extends Model
     {
         return $this->belongsTo(Course::class);
     }
+
+    public function work()
+    {
+        return $this->hasOne(Work::class);
+    }
 }

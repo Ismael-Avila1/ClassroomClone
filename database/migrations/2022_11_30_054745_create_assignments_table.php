@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('instructions');
             $table->integer('points');
             $table->date('due');
+            $table->foreignId('work_id')->constrained();
         });
     }
 
