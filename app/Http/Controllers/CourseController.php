@@ -42,18 +42,17 @@ class CourseController extends Controller
             'room' => 'required|min:1'
         ]);
 
-        $invitationCode = substr(md5($request->id), 0, 8);
-        $id = Auth::id();
+        $invitationCode = substr(md5($request->name), 0, 8);
 
         Course::create([
             'name' => $request->name,
             'section' => $request->section,
             'room' => $request->room,
             'invitation-code' => $invitationCode,
-            'user_id' => $id
+            'user_id' => Auth::id()
         ]);
 
-        //Redirigir a alguna parte (dashboard de usuarios)
+        return redirect('user');
     }
 
     /**
