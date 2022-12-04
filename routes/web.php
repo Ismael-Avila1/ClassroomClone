@@ -24,6 +24,9 @@ Route::get('/', function () {
 Route::get('/contactForm/{codigo?}', [SitioController::class, 'contact']);
 Route::post('/contactForm', [SitioController::class, 'saveMessage']);
 
+route::get('/joinCourse', [UserController::class, 'joinForm']);
+route::post('/join', [UserController::class, 'joinCourse']);
+
 
 Route::resource('user', UserController::class);
 Route::resource('course', CourseController::class);

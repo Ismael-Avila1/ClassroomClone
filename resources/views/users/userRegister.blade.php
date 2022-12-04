@@ -1,4 +1,8 @@
-<x-template title="Registro de Usuario">
+<x-template>
+
+    <x-user-navbar></x-user-navbar>
+
+    <h1 class="title is-size-1-desktop has-text-centered">Registro de Usuario</h1>
 
     <div class="container">
         @if($errors->any())

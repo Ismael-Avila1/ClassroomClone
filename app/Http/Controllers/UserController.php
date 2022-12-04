@@ -3,9 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Course;
+use function Ramsey\Uuid\v1;
 use Illuminate\Http\Request;
 
-use function Ramsey\Uuid\v1;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -16,8 +19,10 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::all();
-        return view('users.userIndex', compact('users'));
+        $teachingCourses = Course::all()->where('user_id', Auth::user()->id);
+        $enrolledCourses = Auth::user()->classes;
+
+        return view('users.userIndex', compact('teachingCourses', 'enrolledCourses'));
     }
 
     /**
@@ -60,7 +65,10 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
-        return view('users.userShow', compact('user'));
+        $teachingCourses = Course::all()->where('user_id', $user->id);
+        $enrolledCourses = $user->classes;
+
+        return view('users.userShow', compact('user', 'teachingCourses', 'enrolledCourses'));
     }
 
     /**
@@ -71,7 +79,10 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
-        return view('users.userEdit', compact('user'));
+        $teachingCourses = Course::all()->where('user_id', $user->id);
+        $enrolledCourses = $user->classes;
+
+        return view('users.userEdit', compact('user', 'teachingCourses', 'enrolledCourses'));
     }
 
     /**
@@ -112,6 +123,30 @@ class UserController extends Controller
     public function destroy(User $user)
     {
         $user->delete();
+
+        return redirect('user');
+    }
+
+
+    public function joinForm()
+    {
+        $user = Auth::user();
+
+        $teachingCourses = Course::all()->where('user_id', $user->id);
+        $enrolledCourses = $user->classes;
+
+        return view('users.joinCourse', compact('user', 'teachingCourses', 'enrolledCourses'));
+    }
+
+
+    public function joinCourse(Request $request)
+    {
+        $courseId = Course::where('invitation-code', $request->code)->value('id');
+
+        DB::table('course_user')->insert([
+            'course_id' => $courseId,
+            'user_id' => Auth::user()->id
+        ]);
 
         return redirect('user');
     }

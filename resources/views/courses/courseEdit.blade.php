@@ -1,4 +1,8 @@
-<x-template title="Modificar Información del Curso">
+<x-template>
+
+    <x-course-navbar></x-course-navbar>
+
+    <h1 class="title is-size-1-desktop has-text-centered">Modificar Información del curso</h1>
 
     <form class="container" action="/course/{{ $course->id }}" method="POST">
         @csrf
