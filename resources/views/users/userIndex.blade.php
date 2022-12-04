@@ -1,6 +1,6 @@
 <x-template>
 
-    <x-user-navbar></x-user-navbar>
+    <x-user-navbar :$teachingCourses :$enrolledCourses ></x-user-navbar>
 
     <h1 class="title is-size-1-desktop has-text-centered">Listado de tus Cursos</h1>
 

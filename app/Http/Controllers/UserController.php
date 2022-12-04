@@ -64,7 +64,10 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
-        return view('users.userShow', compact('user'));
+        $teachingCourses = Course::all()->where('user_id', $user->id);
+        $enrolledCourses = $user->classes;
+
+        return view('users.userShow', compact('user', 'teachingCourses', 'enrolledCourses'));
     }
 
     /**
@@ -75,7 +78,10 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
-        return view('users.userEdit', compact('user'));
+        $teachingCourses = Course::all()->where('user_id', $user->id);
+        $enrolledCourses = $user->classes;
+
+        return view('users.userEdit', compact('user', 'teachingCourses', 'enrolledCourses'));
     }
 
     /**

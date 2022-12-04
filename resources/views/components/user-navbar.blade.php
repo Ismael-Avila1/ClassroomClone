@@ -18,8 +18,15 @@
 
                 <div class="navbar-dropdown">
                     {{-- agregar un boton por cada una de las clases del usuario --}}
-                    {{-- <a class="navbar-item button is-white"></a> --}}
-                    {{-- <hr class="navbar-divider"> --}}
+                    @foreach($teachingCourses as $teaching)
+                        <a class="navbar-item button is-white">{{ $teaching->name }}</a>
+                    @endforeach
+
+                    <hr class="navbar-divider">
+
+                    @foreach($enrolledCourses as $enrolled)
+                        <a class="navbar-item button is-white">{{ $enrolled->name }}</a>
+                    @endforeach
                 </div>
             </div>
 
@@ -27,7 +34,7 @@
                 <a class="navbar-link">Crear o unirse a una clase</a>
 
                 <div class="navbar-dropdown">
-                    <a class="navbar-item button is-white" href="course/create">Crear clase</a>
+                    <a class="navbar-item button is-white" href="/course/create">Crear clase</a>
                     <a class="navbar-item button is-white">Unirse a una clase</a>
                 </div>
             </div>
