@@ -11,10 +11,6 @@
 </head>
 <body>
 
-    <x-course-navbar></x-course-navbar>
-
-    <h1 class="title is-size-1-desktop has-text-centered">{{ $title }}</h1>
-
     {{ $slot }}
 
 </body>

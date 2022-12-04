@@ -1,4 +1,8 @@
-<x-template title="Listado de Usuarios">
+<x-template>
+
+    <x-course-navbar></x-course-navbar>
+
+    <h1 class="title is-size-1-desktop has-text-centered">Listado de Usuarios</h1>
 
     <table class="table is-hoverable is-fullwidth">
         <thead>

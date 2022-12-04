@@ -1,4 +1,8 @@
-<x-template title="Modificar Información de Usuario">
+<x-template>
+
+    <x-course-navbar></x-course-navbar>
+
+    <h1 class="title is-size-1-desktop has-text-centered">Modificar Información del Usuario</h1>
 
     <form class="container" action="/user/{{ $user->id }}" method="POST">
         @csrf

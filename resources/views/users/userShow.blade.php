@@ -1,4 +1,8 @@
-<x-template title="Información de Usuario">
+<x-template>
+
+    <x-course-navbar></x-course-navbar>
+
+    <h1 class="title is-size-1-desktop has-text-centered">Información de Usuario</h1>
 
     <div class="container">
         <div class="card">

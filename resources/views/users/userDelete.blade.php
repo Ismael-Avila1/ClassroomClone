@@ -1,2 +1,2 @@
-<x-template title="Eliminar Usuarios">
+<x-template>
 </x-template>
