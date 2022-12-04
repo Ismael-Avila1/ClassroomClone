@@ -11,19 +11,21 @@
             @foreach($teachingCourses as $teaching)
             <div class="column is-one-quarter">
                 <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-128x128">
-                            <img src="/classBoard.png" alt="Logo del curso">
-                        </figure>
-                    </div>
-
-                    <div class="card-content">
-                        <div class="media-content">
-                            <p class="subtitle is-4">{{ $teaching->name }}</p>
-                            <p class="subtitle is-6">Sección: {{ $teaching->section }}</p>
-                            <p class="subtitle is-6">Salón: {{ $teaching->room }}</p>
+                    <a href="course/{{ $teaching->id }}">
+                        <div class="card-image">
+                            <figure class="image is-128x128">
+                                <img src="/classBoard.png" alt="Logo del curso">
+                            </figure>
                         </div>
-                    </div>
+
+                        <div class="card-content">
+                            <div class="media-content">
+                                <p class="subtitle is-4">{{ $teaching->name }}</p>
+                                <p class="subtitle is-6">Sección: {{ $teaching->section }}</p>
+                                <p class="subtitle is-6">Salón: {{ $teaching->room }}</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
             @endforeach
@@ -37,19 +39,21 @@
             @foreach($enrolledCourses as $enrolled)
             <div class="column is-one-quarter">
                 <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-128x128">
-                            <img src="/classBoard.png" alt="Logo del curso">
-                        </figure>
-                    </div>
-
-                    <div class="card-content">
-                        <div class="media-content">
-                            <p class="subtitle is-4">{{ $enrolled->name }}</p>
-                            <p class="subtitle is-6">Sección: {{ $enrolled->section }}</p>
-                            <p class="subtitle is-6">Salón: {{ $enrolled->room }}</p>
+                    <a href="course/{{ $enrolled->id }}">
+                        <div class="card-image">
+                            <figure class="image is-128x128">
+                                <img src="/classBoard.png" alt="Logo del curso">
+                            </figure>
                         </div>
-                    </div>
+
+                        <div class="card-content">
+                            <div class="media-content">
+                                <p class="subtitle is-4">{{ $enrolled->name }}</p>
+                                <p class="subtitle is-6">Sección: {{ $enrolled->section }}</p>
+                                <p class="subtitle is-6">Salón: {{ $enrolled->room }}</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
             @endforeach
