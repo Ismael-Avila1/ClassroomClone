@@ -8,6 +8,7 @@
         <h2>Cursos que estás dictando</h2>
         <div class="columns">
             {{-- Hacer un foreach de cada curso que el usuario sea profesor --}}
+            @foreach($teachingCourses as $teaching)
             <div class="column is-one-quarter">
                 <div class="card">
                     <div class="card-image">
@@ -18,13 +19,14 @@
 
                     <div class="card-content">
                         <div class="media-content">
-                            <p class="subtitle is-4">Bases de datos</p>
-                            <p class="subtitle is-6">Sección: </p>
-                            <p class="subtitle is-6">Salón: </p>
+                            <p class="subtitle is-4">{{ $teaching->name }}</p>
+                            <p class="subtitle is-6">Sección: {{ $teaching->section }}</p>
+                            <p class="subtitle is-6">Salón: {{ $teaching->room }}</p>
                         </div>
                     </div>
                 </div>
             </div>
+            @endforeach
         </div>
     </div>
 

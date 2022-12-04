@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Course;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 use function Ramsey\Uuid\v1;
 
@@ -17,7 +19,9 @@ class UserController extends Controller
     public function index()
     {
         $users = User::all();
-        return view('users.userIndex', compact('users'));
+
+        $teachingCourses = Course::all()->where('user_id', Auth::user()->id);
+        return view('users.userIndex', compact('teachingCourses'));
     }
 
     /**
