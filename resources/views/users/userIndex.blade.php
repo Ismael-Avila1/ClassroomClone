@@ -2,49 +2,54 @@
 
     <x-user-navbar></x-user-navbar>
 
-    <h1 class="title is-size-1-desktop has-text-centered">Listado de Usuarios</h1>
+    <h1 class="title is-size-1-desktop has-text-centered">Listado de tus Cursos</h1>
 
-    <table class="table is-hoverable is-fullwidth">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>Correo</th>
-                <th>Editar</th>
-                <th>Eliminar</th>
-            </tr>
-        </thead>
+    <div class="box">
+        <h2>Cursos que estás dictando</h2>
+        <div class="columns">
+            {{-- Hacer un foreach de cada curso que el usuario sea profesor --}}
+            <div class="column is-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-128x128">
+                            <img src="/classBoard.png" alt="Logo del curso">
+                        </figure>
+                    </div>
 
-        <tbody>
-            @foreach($users as $user)
-                <tr>
-                    <td>{{ $user->id }}</td>
-                    <td>
-                        <a class="link is-normal is-responsive" href="/user/{{ $user->id }}">
-                            {{ $user->name }}
-                        </a>
-                    </td>
-                    <td>{{ $user->email }}</td>
-                    <td><a class="button is-info is-normal is-responsive" href="/user/{{ $user->id }}/edit">Editar</a></td>
-                    <td>
-                        <form action="/user/{{ $user->id }}" method="POST">
-                            @csrf
-                            @method('delete')
-                            <input class="button is-danger is-normal is-responsive" type="submit" value="Eliminar">
-                        </form>
-                    </td>
-                </tr>
-            @endforeach
-        </tbody>
+                    <div class="card-content">
+                        <div class="media-content">
+                            <p class="subtitle is-4">Bases de datos</p>
+                            <p class="subtitle is-6">Sección: </p>
+                            <p class="subtitle is-6">Salón: </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <tfoot>
-            <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>Correo</th>
-                <th>Editar</th>
-                <th>Eliminar</th>
-            </tr>
-        </tfoot>
-    </table>
+    <div class="box">
+        <h2>Cursos en los que estás inscrito</h2>
+        <div class="columns">
+            {{-- Hacer un foreach de cada curso que el usuario sea alumno --}}
+            <div class="column is-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-128x128">
+                            <img src="/classBoard.png" alt="Logo del curso">
+                        </figure>
+                    </div>
+
+                    <div class="card-content">
+                        <div class="media-content">
+                            <p class="subtitle is-4">Bases de datos</p>
+                            <p class="subtitle is-6">Sección: </p>
+                            <p class="subtitle is-6">Salón: </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </x-template>
