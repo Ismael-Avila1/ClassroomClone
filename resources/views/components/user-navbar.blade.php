@@ -35,7 +35,7 @@
 
                 <div class="navbar-dropdown">
                     <a class="navbar-item button is-white" href="/course/create">Crear clase</a>
-                    <a class="navbar-item button is-white">Unirse a una clase</a>
+                    <a class="navbar-item button is-white" href="/joinCourse">Unirse a una clase</a>
                 </div>
             </div>
         </div>

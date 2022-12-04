@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Course;
 use App\Models\User;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-
+use App\Models\Course;
 use function Ramsey\Uuid\v1;
+use Illuminate\Http\Request;
+
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -122,6 +123,30 @@ class UserController extends Controller
     public function destroy(User $user)
     {
         $user->delete();
+
+        return redirect('user');
+    }
+
+
+    public function joinForm()
+    {
+        $user = Auth::user();
+
+        $teachingCourses = Course::all()->where('user_id', $user->id);
+        $enrolledCourses = $user->classes;
+
+        return view('users.joinCourse', compact('user', 'teachingCourses', 'enrolledCourses'));
+    }
+
+
+    public function joinCourse(Request $request)
+    {
+        $courseId = Course::where('invitation-code', $request->code)->value('id');
+
+        DB::table('course_user')->insert([
+            'course_id' => $courseId,
+            'user_id' => Auth::user()->id
+        ]);
 
         return redirect('user');
     }
