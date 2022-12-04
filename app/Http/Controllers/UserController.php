@@ -18,10 +18,10 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::all();
-
         $teachingCourses = Course::all()->where('user_id', Auth::user()->id);
-        return view('users.userIndex', compact('teachingCourses'));
+        $enrolledCourses = Auth::user()->classes;
+
+        return view('users.userIndex', compact('teachingCourses', 'enrolledCourses'));
     }
 
     /**
