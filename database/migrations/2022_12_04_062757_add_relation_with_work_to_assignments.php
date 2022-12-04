@@ -13,12 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('assignments', function (Blueprint $table) {
-            $table->id();
-            $table->string('title');
-            $table->string('instructions');
-            $table->integer('points');
-            $table->date('due');
+        Schema::table('assignments', function (Blueprint $table) {
+            $table->foreignId('work_id')->nullable()->constrained();
         });
     }
 
@@ -29,6 +25,8 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('assignments');
+        Schema::table('assignments', function (Blueprint $table) {
+            $table->dropColumn('work_id');
+        });
     }
 };
