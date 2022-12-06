@@ -18,6 +18,7 @@
                         <p class="title is-4">{{ $course->name }}</p>
                         <p class="subtitle is-6">Sección: {{ $course->section }}</p>
                         <p class="subtitle is-6">Aula: {{ $course->room }}</p>
+                        <a class="button is-outlined" href="{{ $course->id }}/edit">Editar Información del Curso</a>
                     </div>
                 </div>
             </div>
