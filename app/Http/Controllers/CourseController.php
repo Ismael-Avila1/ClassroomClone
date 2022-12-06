@@ -120,7 +120,7 @@ class CourseController extends Controller
     public function list($id)
     {
         $course = Course::where('id', $id)->first();
-        $teacher = User::where('id', $course->id)->first();
+        $teacher = User::where('id', $course->user_id)->first();
         $students_id = DB::table('course_user')->where('course_id', $course->id)->get();
         $students = [];
 
