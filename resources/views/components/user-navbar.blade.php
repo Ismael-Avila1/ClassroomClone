@@ -19,13 +19,13 @@
                 <div class="navbar-dropdown">
                     {{-- agregar un boton por cada una de las clases del usuario --}}
                     @foreach($teachingCourses as $teaching)
-                        <a class="navbar-item button is-white">{{ $teaching->name }}</a>
+                        <a class="navbar-item button is-white" href="/course/{{ $teaching->id }}">{{ $teaching->name }}</a>
                     @endforeach
 
                     <hr class="navbar-divider">
 
                     @foreach($enrolledCourses as $enrolled)
-                        <a class="navbar-item button is-white">{{ $enrolled->name }}</a>
+                        <a class="navbar-item button is-white" href="{{ $enrolled->id }}">{{ $enrolled->name }}</a>
                     @endforeach
                 </div>
             </div>
