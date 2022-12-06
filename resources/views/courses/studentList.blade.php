@@ -1,6 +1,6 @@
 <x-template>
 
-    <x-course-navbar></x-course-navbar>
+    <x-course-navbar :course="$course"></x-course-navbar>
 
     <h1 class="title is-size-1-desktop has-text-centered">{{ $course->name }}</h1>
 
