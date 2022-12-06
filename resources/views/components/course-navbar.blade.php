@@ -14,7 +14,7 @@
     <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
             <a class="navbar-item" href="/course/{{ $course->id }}">Inicio</a>
-            <a class="navbar-item" href="">Trabajos</a>
+            <a class="navbar-item" href="/course/{{ $course->id }}/assignment">Trabajos</a>
             <a class="navbar-item" href="/course/{{ $course->id }}/list">Personas</a>
         </div>
 

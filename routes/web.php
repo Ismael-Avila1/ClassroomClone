@@ -34,6 +34,8 @@ Route::resource('user', UserController::class);
 Route::resource('course', CourseController::class);
 Route::resource('assignment', AssignmentController::class);
 
+route::get('course/{id}/assignment', [AssignmentController::class, 'index']);
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
