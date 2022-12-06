@@ -25,7 +25,7 @@
                 <div class="navbar-dropdown">
                     <a class="navbar-item button is-white">{{ Auth::user()->name }}</a>
                     <hr class="navbar-divider">
-                    <a class="navbar-item button is-info is-fullwidth" href="user/{{ Auth::user()->id }}">Perfil</a>
+                    <a class="navbar-item button is-info is-fullwidth" href="/user/{{ Auth::user()->id }}">Perfil</a>
 
                     <hr class="navbar-divider">
 
