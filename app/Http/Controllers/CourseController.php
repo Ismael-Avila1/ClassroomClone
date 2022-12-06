@@ -27,7 +27,10 @@ class CourseController extends Controller
      */
     public function create()
     {
-        return view('courses.courseCreate');
+        $teachingCourses = Course::all()->where('user_id', Auth::user()->id);
+        $enrolledCourses = Auth::user()->classes;
+
+        return view('courses.courseCreate', compact('teachingCourses', 'enrolledCourses'));
     }
 
     /**
