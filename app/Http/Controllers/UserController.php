@@ -19,7 +19,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        $teachingCourses = Course::all()->where('user_id', Auth::user()->id);
+        $teachingCourses = Course::where('user_id', Auth::user()->id)->get();
         $enrolledCourses = Auth::user()->classes;
 
         return view('users.userIndex', compact('teachingCourses', 'enrolledCourses'));
@@ -65,7 +65,7 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
-        $teachingCourses = Course::all()->where('user_id', $user->id);
+        $teachingCourses = Course::where('user_id', $user->id)->get();
         $enrolledCourses = $user->classes;
 
         return view('users.userShow', compact('user', 'teachingCourses', 'enrolledCourses'));
@@ -79,7 +79,7 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
-        $teachingCourses = Course::all()->where('user_id', $user->id);
+        $teachingCourses = Course::where('user_id', $user->id)->get();
         $enrolledCourses = $user->classes;
 
         return view('users.userEdit', compact('user', 'teachingCourses', 'enrolledCourses'));
