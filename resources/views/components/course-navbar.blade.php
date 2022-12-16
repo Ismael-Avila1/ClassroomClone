@@ -13,8 +13,22 @@
 
     <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-            <a class="navbar-item" href="">Trabajos</a>
-            <a class="navbar-item" href="">Personas</a>
+            <a class="navbar-item" href="/course/{{ $course->id }}">Inicio</a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">Trabajos</a>
+
+                <div class="navbar-dropdown">
+                    <a class="navbar-item button is-primary" href="/course/{{ $course->id }}/assignment">Listado de tareas</a>
+
+                    <hr class="navbar-divider">
+
+                    <a class="navbar-item button is-info" href="/course/{{ $course->id }}/assignment/create">Crear nueva tarea</a>
+                </div>
+            </div>
+
+            {{-- <a class="navbar-item" href="/course/{{ $course->id }}/assignment">Trabajos</a> --}}
+            <a class="navbar-item" href="/course/{{ $course->id }}/list">Personas</a>
         </div>
 
         <div class="navbar-end">
@@ -24,7 +38,7 @@
                 <div class="navbar-dropdown">
                     <a class="navbar-item button is-white">{{ Auth::user()->name }}</a>
                     <hr class="navbar-divider">
-                    <a class="navbar-item button is-info is-fullwidth" href="user/{{ Auth::user()->id }}">Perfil</a>
+                    <a class="navbar-item button is-info is-fullwidth" href="/user/{{ Auth::user()->id }}">Perfil</a>
 
                     <hr class="navbar-divider">
 

@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Course;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 
 class CourseController extends Controller
@@ -25,7 +27,10 @@ class CourseController extends Controller
      */
     public function create()
     {
-        return view('courses.courseCreate');
+        $teachingCourses = Course::all()->where('user_id', Auth::user()->id);
+        $enrolledCourses = Auth::user()->classes;
+
+        return view('courses.courseCreate', compact('teachingCourses', 'enrolledCourses'));
     }
 
     /**
@@ -113,5 +118,19 @@ class CourseController extends Controller
         $course->delete();
 
         return redirect('user');
+    }
+
+    public function list($id)
+    {
+        $course = Course::where('id', $id)->first();
+        $teacher = User::where('id', $course->user_id)->first();
+        $students_id = DB::table('course_user')->where('course_id', $course->id)->get();
+        $students = [];
+
+        foreach($students_id as $s) {
+            array_push($students, User::where('id', $s->user_id)->first());
+        }
+
+        return view('courses.studentList', compact('course', 'teacher', 'students'));
     }
 }

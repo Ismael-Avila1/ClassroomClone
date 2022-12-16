@@ -2,7 +2,7 @@
 
     <x-user-navbar :$teachingCourses :$enrolledCourses ></x-user-navbar>
 
-    <h1 class="title is-size-1-desktop has-text-centered">Información de Usuario</h1>
+    <h1 class="title is-size-1-desktop has-text-centered">Perfil de Usuario</h1>
 
     <div class="container">
         <div class="card">
@@ -17,6 +17,7 @@
                     <div class="media-content">
                         <p class="title is-4">{{ $user->name }}</p>
                         <p class="subtitle is-6">{{ $user->email }}</p>
+                        <a class="button is-outlined" href="{{ $user->id }}/edit">Editar Información del Usuario</a>
                     </div>
                 </div>
             </div>

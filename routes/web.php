@@ -27,10 +27,14 @@ Route::post('/contactForm', [SitioController::class, 'saveMessage']);
 route::get('/joinCourse', [UserController::class, 'joinForm']);
 route::post('/join', [UserController::class, 'joinCourse']);
 
+route::get('course/{id}/list', [CourseController::class, 'list']);
+
 
 Route::resource('user', UserController::class);
 Route::resource('course', CourseController::class);
 Route::resource('assignment', AssignmentController::class);
+
+route::get('course/{id}/assignment', [AssignmentController::class, 'index']);
 
 Route::middleware([
     'auth:sanctum',
